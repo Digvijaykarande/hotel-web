@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f6f2;
+  color: #333;
+}
+
+.hero {
+  background-image: url('foodfront.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.reservation-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.reservation-form {
+  background-color: #0e2e14;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+}
+
+.reservation-form h2 {
+  margin-bottom: 20px;
+}
+
+.reservation-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.reservation-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.reservation-form button {
+  background-color: white;
+  color: #0e2e14;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.signature {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f6f2;
+}
+
+.signature h3 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.signature h2 {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+.menu-btn {
+  background-color: #0e2e14;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.dish {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.dish img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dish-info {
+  position: absolute;
+  bottom: 10px;
+ left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.menu-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.menu-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.menu-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-text h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.menu-text span {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.menu-text p {
+  margin: 20px auto;
+  max-width: 600px;
+}
+.menu-text a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.blend-section {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  background: #000;
+}
+
+.blend-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.blend-section span {
+  color: goldenrod;
+}
+
+.blend-background {
+  background: url('foodfront.jpg') no-repeat center center/cover;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.delight-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.delight-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.delight-text h2 {
+  font-size: 2.5rem;
+}
+
+.delight-text span {
+  color: goldenrod;
+}
+
+.delight-text p {
+  margin: 20px 0;
+}
+
+.delight-text a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bold;
+}
+.delight-gallery {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.delight-gallery img {
+  width: 40%;
+  border-radius: 8px;
+  height: 50%;
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer h3 {
+  color: goldenrod;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  line-height: 1.5;
+}

@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #bf8a8a;;
+  background: #fff;
+}
+
+.hero {
+  background-image: url('westarn.jpg'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+.hero p {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+  position: relative;
+}
+
+.contact-info .label {
+  font-family: 'Cursive', serif;
+  color: #a1887f;
+  margin-bottom: 10px;
+}
+
+.contact-info h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.map-button {
+  padding: 10px 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.method {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.method img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.method h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.method span {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+.contact-form-section {
+  background-color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-container h4 {
+  color: #a68b5c;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.form-container p {
+  margin-bottom: 30px;
+  color: #777;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  align-self: center;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Quick Contact */
+.quick-contact-section {
+  background-color: #eceaea;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.quick-contact-container h4 {
+  font-style: italic;
+  color: #a68b5c;
+  margin-bottom: 5px;
+}
+.quick-contact-container h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 800px;
+}
+
+td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+a {
+  color: #a68b5c;
+  text-decoration: none;
+}
+.footer {
+  background-color: #0d0d0d;
+  padding: 60px 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #c59d5f;
+}
+
+.logo span {
+  color: #fff;
+}
+
+.tagline {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.read-more {
+  display: inline-block;
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links h3 {
+  margin-bottom: 15px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.subscribe h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.subscribe input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.subscribe button {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #c59d5f;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials span {
+  display: block;
+  margin-bottom: 10px;
+}
+.icons i {
+  margin-right: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #ccc;
+}

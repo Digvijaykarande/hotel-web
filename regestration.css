@@ -5,22 +5,27 @@
 }
 
 body {
-   background: url('room1.jpg') no-repeat center center/cover;
-  height: 100vh;
+  background: #f0f0f0;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: flex;
-  width: 800px;
-  height: 500px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  background-color: #fff;
+  background-color: #000000;
 }
+
+/* Left Panel */
 .left-panel {
   flex: 1;
   background: url('room1.jpg') no-repeat center center/cover;
@@ -32,15 +37,16 @@ body {
 }
 
 .left-panel h1 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
 .left-panel p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
+/* Right Panel */
 .right-panel {
   flex: 1;
   background: white;
@@ -52,18 +58,30 @@ body {
 
 .right-panel h2 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
+form label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+form input {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 14px;
+}
+
+form input:focus {
+  border-color: #000;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .checkbox {
@@ -87,10 +105,16 @@ form input[type="password"] {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: 0.3s;
 }
+.primary-btn:hover {
+  background-color: #333;
+  transform: scale(1.02);
+}
+
 .divider {
   text-align: center;
-  margin: 10px 0;
+  margin: 15px 0;
   color: #666;
 }
 
@@ -104,9 +128,29 @@ form input[type="password"] {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.google-btn:hover,
+.apple-btn:hover {
+  background-color: #eee;
 }
 
 .apple-btn {
   background-color: black;
   color: white;
+}
+.apple-btn:hover {
+  background-color: #222;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    height: 600px;
+  }
+  .left-panel, .right-panel {
+    flex: 1;
+  }
 }
